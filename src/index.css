@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-yellow: #F0D625;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #FFD700 #111111;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #111111;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #FFD700;
+  border-radius: 3px;
+}
+
+/* Carousel Custom Styles */
+.video-carousel .slick-prev,
+.video-carousel .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+.video-carousel .slick-prev:before,
+.video-carousel .slick-next:before {
+  color: #FFD700;
+  font-size: 40px;
+}
+
+.video-carousel .slick-dots li button:before {
+  color: #FFD700;
+}
+
+.video-carousel .slick-dots li.slick-active button:before {
+  color: #FFD700;
+}
+html {
+  scroll-behavior: smooth;
+}
